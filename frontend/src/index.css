@@ -1,0 +1,70 @@
+.nav-item-custom {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item-custom:hover {
+  color: #ffc107 !important; /* Gold Color Hover */
+  transform: scale(1.1);
+}
+
+.nav-item-custom::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-item-custom:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+.custom-card {
+  width: 400px;
+  border-radius: 10px;
+  background: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.custom-input {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-input:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+.custom-btn {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3 !important;
+  transform: scale(1.05);
+}
+
+
+body {
+  color: black !important;
+  font-weight: bold !important;
+}
